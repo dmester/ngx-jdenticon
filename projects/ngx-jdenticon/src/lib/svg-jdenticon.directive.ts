@@ -20,11 +20,11 @@ export class SvgJdenticonDirective implements OnChanges {
 
   @Input()
   @HostBinding('attr.width')
-  width: number;
+  width: string | number;
 
   @Input()
   @HostBinding('attr.height')
-  height: number;
+  height: string | number;
 
   constructor(
     private el: ElementRef<SVGSVGElement>,
