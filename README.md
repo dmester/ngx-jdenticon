@@ -1,6 +1,6 @@
 # ngx-jdenticon
 
-Angular 2+ component that can be used to generate identicons using [Jdenticon](https://github.com/dmester/jdenticon).
+Angular 2+ directives that can be used to generate identicons using [Jdenticon](https://github.com/dmester/jdenticon).
 
 ![Sample identicons](https://jdenticon.com/hosted/github-samples.png)
 
