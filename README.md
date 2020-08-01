@@ -1,27 +1,55 @@
-# NgxJdenticonApp
+# ngx-jdenticon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+Angular 2+ component that can be used to generate identicons using [Jdenticon](https://github.com/dmester/jdenticon).
 
-## Development server
+![Sample identicons](https://jdenticon.com/hosted/github-samples.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Demo](https://stackblitz.com/edit/ngx-jdenticon-sample)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Add a dependency to ngx-jdenticon.
 
-## Build
+```sh
+npm install --save ngx-jdenticon jdenticon
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Let Angular know that you will be using ngx-jdenticon by importing `NgxJdenticonModule` into your `app.module.ts` (or another module).
 
-## Running unit tests
+```ts
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { NgxJdenticonModule } from 'ngx-jdenticon'; // <--- Add
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import { AppComponent } from './app.component';
 
-## Running end-to-end tests
+@NgModule({
+   declarations: [
+      AppComponent
+   ],
+   imports: [
+      BrowserModule,
+      NgxJdenticonModule, // <--- Add
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Add an icon to your app. You can choose to decorate either an `<svg>` or `<canvas>` element with the `data-jdenticon-value`
+or `data-jdenticon-hash` attribute.
 
-## Further help
+```html
+<svg width="100" height="100" data-jdenticon-value="John Doe"></svg>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You can also bind a value from your component with the binding syntax:
+
+```html
+<svg width="100" height="100" [data-jdenticon-value]="userName"></svg>
+```
+
+## See also
+
+[Sample app on StackBlitz](https://stackblitz.com/edit/ngx-jdenticon-sample)
