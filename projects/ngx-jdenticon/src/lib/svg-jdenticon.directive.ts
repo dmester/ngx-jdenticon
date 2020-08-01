@@ -1,6 +1,9 @@
 import { Directive, Input, OnChanges, HostBinding, ElementRef, Inject, Optional, NgZone } from '@angular/core';
-import { updateSvg, JdenticonConfig } from "jdenticon";
+import { updateSvg, JdenticonConfig } from 'jdenticon';
 import { JDENTICON_CONFIG } from './config';
+
+// Use same attributes as for VanillaJS Jdenticon.
+// tslint:disable:directive-selector no-input-rename
 
 @Directive({
   selector: 'svg[data-jdenticon-hash],svg[data-jdenticon-value]',
