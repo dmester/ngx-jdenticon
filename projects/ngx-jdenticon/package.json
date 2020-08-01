@@ -1,9 +1,27 @@
 {
   "name": "ngx-jdenticon",
+  "description": "Generate identicons in your Angular app using Jdenticon.",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
     "jdenticon": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmester/ngx-jdenticon"
+  },
+  "bugs": {
+    "url": "https://github.com/dmester/ngx-jdenticon/issues"
+  },
+  "keywords": [
+    "javascript",
+    "identicon",
+    "jdenticon",
+    "avatar",
+    "angular"
+  ],
+  "author": "Daniel Mester Pirttijärvi",
+  "license": "MIT",
+  "homepage": "https://jdenticon.com/"
 }
