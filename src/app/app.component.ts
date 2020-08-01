@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngx-jdenticon-app';
+  testUser = "";
+  onlineUsers = ["John Doe", "Jane Smith", "Alice", "Bob"]
 }

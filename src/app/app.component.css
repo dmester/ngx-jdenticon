@@ -1,0 +1,20 @@
+:host {
+    font: 1em Arial, Sans-Serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 20em;
+    padding: 0.8em;
+    border: 1px solid #aaa;
+    background: none;
+    font: inherit;
+}
+
+app-user {
+    margin-right: 15px;
+}
