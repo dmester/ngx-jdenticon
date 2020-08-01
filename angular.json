@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "ngx-jdenticon": {
+      "projectType": "library",
+      "root": "projects/ngx-jdenticon",
+      "sourceRoot": "projects/ngx-jdenticon/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-jdenticon/tsconfig.lib.json",
+            "project": "projects/ngx-jdenticon/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-jdenticon/src/test.ts",
+            "tsConfig": "projects/ngx-jdenticon/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-jdenticon/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-jdenticon/tsconfig.lib.json",
+              "projects/ngx-jdenticon/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-jdenticon-app"
 }

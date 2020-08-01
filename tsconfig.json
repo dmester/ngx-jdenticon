@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-jdenticon": [
+        "dist/ngx-jdenticon"
+      ],
+      "ngx-jdenticon/*": [
+        "dist/ngx-jdenticon/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
