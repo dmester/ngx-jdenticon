@@ -16,7 +16,7 @@ export class SvgJdenticonDirective implements OnChanges {
 
   @Input('data-jdenticon-value')
   @HostBinding('attr.data-jdenticon-value')
-  value: string;
+  value: any;
 
   @Input()
   @HostBinding('attr.width')
