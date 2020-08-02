@@ -28,15 +28,15 @@ import { NgxJdenticonModule } from 'ngx-jdenticon'; // <--- Add
 import { AppComponent } from './app.component';
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule,
-        NgxJdenticonModule, // <--- Add
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgxJdenticonModule, // <--- Add
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
@@ -55,35 +55,35 @@ If you don't like the default colors, use the [icon designer](https://jdenticon.
 Icon style configurations are applied by adding a provider for the `JDENTICON_CONFIG` injection token.
 
 ```ts
-import { NgxJdenticonModule, JDENTICON_CONFIG } from "ngx-jdenticon";
+import { NgxJdenticonModule, JDENTICON_CONFIG } from 'ngx-jdenticon';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
-    imports: [
-        BrowserModule,
-        NgxJdenticonModule,
-    ],
-    providers: [
-        { 
-            // Custom identicon style
-            // https://jdenticon.com/icon-designer.html?config=222222ff014132321e363f52
-            provide: JDENTICON_CONFIG,
-            useValue: {
-                lightness: {
-                    color: [0.31, 0.54],
-                    grayscale: [0.63, 0.82]
-                },
-                saturation: {
-                    color: 0.50,
-                    grayscale: 0.50
-                },
-                backColor: "#222",
-            },
-        }
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    NgxJdenticonModule,
+  ],
+  providers: [
+    { 
+      // Custom identicon style
+      // https://jdenticon.com/icon-designer.html?config=222222ff014132321e363f52
+      provide: JDENTICON_CONFIG,
+      useValue: {
+        lightness: {
+          color: [0.31, 0.54],
+          grayscale: [0.63, 0.82],
+        },
+        saturation: {
+          color: 0.50,
+          grayscale: 0.50,
+        },
+        backColor: '#222',
+      },
+    }
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
