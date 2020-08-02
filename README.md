@@ -4,7 +4,11 @@ Angular 2+ directives that can be used to generate identicons using [Jdenticon](
 
 ![Sample identicons](https://jdenticon.com/hosted/github-samples.png)
 
-[Demo](https://stackblitz.com/edit/ngx-jdenticon-sample)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dmester/ngx-jdenticon/Build/master?style=flat-square)](https://github.com/dmester/ngx-jdenticon/actions)
+[![Downloads](https://img.shields.io/npm/dt/ngx-jdenticon.svg?style=flat-square)](https://www.npmjs.com/package/ngx-jdenticon)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dmester/ngx-jdenticon/blob/master/LICENSE)
+
+🚀 [Sample app at StackBlitz](https://stackblitz.com/edit/ngx-jdenticon-sample)
 
 ## Install
 
@@ -88,4 +92,4 @@ export class AppModule { }
 
 ## See also
 
-[Sample app on StackBlitz](https://stackblitz.com/edit/ngx-jdenticon-sample)
+[Jdenticon homepage](https://jdenticon.com)
