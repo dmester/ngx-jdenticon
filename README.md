@@ -1,6 +1,6 @@
 # ngx-jdenticon
 
-Angular directives that can be used to generate identicons using [Jdenticon](https://github.com/dmester/jdenticon).
+Angular directives used to generate identicons using [Jdenticon](https://github.com/dmester/jdenticon).
 
 ![Sample identicons](https://jdenticon.com/hosted/github-samples.png)
 
@@ -12,13 +12,13 @@ Angular directives that can be used to generate identicons using [Jdenticon](htt
 
 ## Install
 
-Add a dependency to [ngx-jdenticon](https://www.npmjs.com/package/ngx-jdenticon) NPM package.
+Install the [ngx-jdenticon](https://www.npmjs.com/package/ngx-jdenticon) and [jdenticon](https://www.npmjs.com/package/jdenticon) NPM packages.
 
 ```sh
 npm install --save ngx-jdenticon jdenticon
 ```
 
-Let Angular know that you will be using ngx-jdenticon by importing `NgxJdenticonModule` into your `app.module.ts` (or another module).
+Import `NgxJdenticonModule` into your `app.module.ts` (or another module).
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -41,8 +41,10 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-Add an icon to your app. You can choose to decorate either an `<svg>` or `<canvas>` element with the `data-jdenticon-value`
-or `data-jdenticon-hash` attribute.
+Add an icon by decorating either an `<svg>` or `<canvas>` element with the 
+[`data-jdenticon-value`](https://jdenticon.com/js-api/A_data-jdenticon-value.html) or
+[`data-jdenticon-hash`](https://jdenticon.com/js-api/A_data-jdenticon-hash.html)
+attribute.
 
 ```html
 <svg width="100" height="100" data-jdenticon-value="John Doe"></svg>
