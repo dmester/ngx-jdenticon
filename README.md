@@ -12,7 +12,7 @@ Angular 2+ directives that can be used to generate identicons using [Jdenticon](
 
 ## Install
 
-Add a dependency to ngx-jdenticon.
+Add a dependency to [ngx-jdenticon](https://www.npmjs.com/package/ngx-jdenticon) NPM package.
 
 ```sh
 npm install --save ngx-jdenticon jdenticon
