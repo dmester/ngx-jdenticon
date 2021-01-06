@@ -27,7 +27,7 @@ export class CanvasJdenticonDirective implements OnChanges {
   height: string | number;
 
   constructor(
-    private el: ElementRef<SVGSVGElement>,
+    private el: ElementRef<HTMLCanvasElement>,
     private zone: NgZone,
     @Optional() @Inject(JDENTICON_CONFIG) private config: JdenticonConfig,
   ) { }
