@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js v10
+      - name: Use Node.js v18
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 18.x
       - run: npm install
 
       - name: Build
