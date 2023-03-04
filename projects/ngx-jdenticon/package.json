@@ -3,9 +3,12 @@
   "description": "Generate identicons in your Angular app using Jdenticon.",
   "version": "1.0.4",
   "peerDependencies": {
-    "@angular/common": ">=8.0.0",
-    "@angular/core": ">=8.0.0",
-    "jdenticon": "^3.0.0"
+    "@angular/common": ">=13",
+    "@angular/core": ">=13",
+    "jdenticon": "^3.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
   },
   "repository": {
     "type": "git",

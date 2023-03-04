@@ -1,5 +1,5 @@
 import { Directive, Input, OnChanges, HostBinding, ElementRef, Inject, Optional, NgZone } from '@angular/core';
-import { updateSvg, JdenticonConfig } from 'jdenticon';
+import { updateSvg, JdenticonConfig } from 'jdenticon/browser';
 import { JDENTICON_CONFIG } from './config';
 
 // Use same attributes as for VanillaJS Jdenticon.
