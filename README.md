@@ -4,7 +4,7 @@ Angular directives used to generate identicons using [Jdenticon](https://github.
 
 ![Sample identicons](https://jdenticon.com/hosted/github-samples.png)
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dmester/ngx-jdenticon/Build/master?style=flat-square)](https://github.com/dmester/ngx-jdenticon/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dmester/ngx-jdenticon/build.js.yml?branch=master&style=flat-square)](https://github.com/dmester/ngx-jdenticon/actions)
 [![Downloads](https://img.shields.io/npm/dt/ngx-jdenticon.svg?style=flat-square)](https://www.npmjs.com/package/ngx-jdenticon)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dmester/ngx-jdenticon/blob/master/LICENSE)
 
